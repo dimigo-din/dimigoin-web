@@ -1,0 +1,6 @@
+# Yarn
+.yarn/**/*
+
+index.html
+*.md
+*.json
