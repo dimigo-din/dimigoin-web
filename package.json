@@ -1,5 +1,6 @@
 {
   "name": "dimigoin-web",
+  "type": "module",
   "scripts": {
     "prepare": "husky",
     "factory94": "pnpm --filter factory94",
@@ -17,5 +18,9 @@
     "readline-sync": "^1.4.10",
     "typescript": "catalog:"
   },
-  "license": "GPL-3.0"
+  "license": "GPL-3.0",
+  "dependencies": {
+    "@locator/runtime": "^0.4.4",
+    "@types/node": "^22.7.7"
+  }
 }

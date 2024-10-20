@@ -9,5 +9,9 @@ export const styles: Styles = {
       fontFamily: "'SUIT Variable', 'Inter Display', sans-serif",
       wordBreak: "keep-all",
     },
+    "html, body": {
+      width: "100%",
+      height: "100%",
+    },
   },
 };

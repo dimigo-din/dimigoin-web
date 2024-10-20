@@ -4,8 +4,13 @@
   "exports": {
     ".": "./src/index.ts"
   },
+  "scripts": {
+    "theme": "chakra-cli tokens src/theme/index.ts",
+    "theme:watch": "chakra-cli tokens src/theme/index.ts --watch"
+  },
   "dependencies": {
     "@chakra-ui/react": "^2.10.3",
+    "@chakra-ui/styled-system": "^2.12.0",
     "@chakra-ui/theme-tools": "^2.2.6",
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
@@ -14,6 +19,7 @@
     "react-dom": "catalog:"
   },
   "devDependencies": {
+    "@chakra-ui/cli": "^2.5.5",
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
     "typescript": "catalog:"
