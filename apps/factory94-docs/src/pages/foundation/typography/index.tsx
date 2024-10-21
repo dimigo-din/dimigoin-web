@@ -1,3 +1,4 @@
+import { DocTitle } from "@/components/DocTitle";
 import { Flex, Grid, GridItem, HStack, Typo, VStack } from "factory94";
 
 function TextGrid({
@@ -45,21 +46,19 @@ function TextGrid({
 export function FoundationTypoPage() {
   return (
     <>
-      <Flex direction="column">
-        <Typo type="body" weight="strong">
-          Foundation
-        </Typo>
-        <Typo type="display" weight="strong">
-          Typography
-        </Typo>
-        <Typo type="paragraphLarge" color="content.standard.secondary">
-          서비스 내에서 일관된 글자를 제공할 수 있도록 명시된 글자 문서입니다.
-          <br />
-          SUIT Variable 폰트를 기본으로 사용하며, 대체제로 Inter Display 폰트를 사용합니다.
-          <br />
-          {/* 접근성을 위해 100%, 135% (iOS 최대), 150%, 200% (Android 최대) 의 배율로 나뉩니다. 디자인 시에는 100%을 기준으로 하여 사용합니다. */}
-        </Typo>
-      </Flex>
+      <DocTitle
+        category="Foundation"
+        title="Typography"
+        desc={
+          <>
+            서비스 내에서 일관된 글자를 제공할 수 있도록 명시된 글자 문서입니다.
+            <br />
+            SUIT Variable 폰트를 기본으로 사용하며, 대체제로 Inter Display 폰트를 사용합니다.
+            {/* <br />
+            접근성을 위해 100%, 135% (iOS 최대), 150%, 200% (Android 최대) 의 배율로 나뉩니다. 디자인 시에는 100%을 기준으로 하여 사용합니다. */}
+          </>
+        }
+      />
       <Flex mt="900" direction="column" gap="1000">
         <VStack alignItems="start" gap="0">
           <Typo type="title" weight="strong">

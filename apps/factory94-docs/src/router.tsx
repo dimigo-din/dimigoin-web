@@ -1,12 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
 
-import { FoundationButtonPage } from "./pages/components/button";
+import { AtomButtonPage } from "./pages/atom/button";
 import { FoundationBrandingPage } from "./pages/foundation/branding";
 import { FoundationColorPage } from "./pages/foundation/color";
 import { FoundationComponentPage } from "./pages/foundation/component";
 import { FoundationIconPage } from "./pages/foundation/icon";
 import { FoundationTypoPage } from "./pages/foundation/typography";
 import { HomePage } from "./pages/home";
+import { InformToastPage } from "./pages/inform/toast";
 
 export const router = createBrowserRouter([
   {
@@ -39,11 +40,20 @@ export const router = createBrowserRouter([
         ],
       },
       {
-        path: "components",
+        path: "atom",
         children: [
           {
             path: "button",
-            element: <FoundationButtonPage />,
+            element: <AtomButtonPage />,
+          },
+        ],
+      },
+      {
+        path: "inform",
+        children: [
+          {
+            path: "toast",
+            element: <InformToastPage />,
           },
         ],
       },

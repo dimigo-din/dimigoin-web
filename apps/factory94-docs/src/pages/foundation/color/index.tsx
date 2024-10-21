@@ -1,3 +1,4 @@
+import { DocTitle } from "@/components/DocTitle";
 import { Box, Center, Flex, Text, Typo, VStack, Wrap } from "factory94";
 import { TranslucentBG } from "./TranslucentBG";
 
@@ -146,19 +147,17 @@ function SectionTitle({
 export function FoundationColorPage() {
   return (
     <>
-      <Flex direction="column">
-        <Typo type="body" weight="strong">
-          Foundation
-        </Typo>
-        <Typo type="display" weight="strong">
-          Color
-        </Typo>
-        <Typo type="paragraphLarge" color="content.standard.secondary">
-          서비스 내에서 영역 간 분명한 상태 구별과 요소 별로 계층을 구분하기 위해 명시된 컬러 문서입니다.
-          <br />
-          효율적인 컬러 사용을 위해 Scoping이 적용되어 있습니다.
-        </Typo>
-      </Flex>
+      <DocTitle
+        category="Foundation"
+        title="Color"
+        desc={
+          <>
+            서비스 내에서 영역 간 분명한 상태 구별과 요소 별로 계층을 구분하기 위해 명시된 컬러 문서입니다.
+            <br />
+            효율적인 컬러 사용을 위해 Scoping이 적용되어 있습니다.
+          </>
+        }
+      />
       <Flex mt="900" direction="column" gap="1000">
         <VStack alignItems="flex-start" gap="850">
           <SectionTitle title="Solid" desc="단색 계열, 시스템 기본 컬러" />

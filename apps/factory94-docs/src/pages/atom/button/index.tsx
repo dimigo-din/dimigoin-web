@@ -1,4 +1,6 @@
-import { Button, Flex, HStack, Icon, Typo, VStack, matcher } from "factory94";
+import { DocTitle } from "@/components/DocTitle";
+import { customStrokeBG } from "@/lib/customStrokeBG";
+import { Button, Flex, HStack, Icon, VStack, matcher } from "factory94";
 
 function DefaultIcon({
   size,
@@ -36,11 +38,16 @@ function ButtonPreview() {
 
   return (
     <Flex
-      my="700"
+      my="900"
       direction="column"
       alignItems="flex-start"
       p="500"
-      background={`url('data:image/svg+xml,%3csvg width=\"100%25\" height=\"100%25\" xmlns=\"http://www.w3.org/2000/svg\"%3e%3crect width=\"100%25\" height=\"100%25\" fill=\"none\" stroke=\"rgba(121, 123, 138, 0.32)\" stroke-width=\"1\" stroke-dasharray=\"10%2c 5\" stroke-dashoffset=\"2\" rx="8px" stroke-linecap=\"square\"/%3e%3c/svg%3e')`}
+      background={customStrokeBG({
+        strokeColor: "rgba(121, 123, 138, 0.32)",
+        strokeDashArray: [10, 5],
+        strokeOffset: 2,
+        borderRadius: "8px",
+      })}
       gap="550">
       {size.map((s, i) => (
         <VStack alignItems="flex-start" gap="inherit" key={i}>
@@ -79,20 +86,14 @@ function ButtonPreview() {
   );
 }
 
-export function FoundationButtonPage() {
+export function AtomButtonPage() {
   return (
     <>
-      <Flex direction="column">
-        <Typo type="body" weight="strong">
-          Components
-        </Typo>
-        <Typo type="display" weight="strong">
-          Button
-        </Typo>
-        <Typo type="paragraphLarge" color="content.standard.secondary">
-          사용자에게 행동을 요구하거나 유도할 때 사용하는 요소입니다.
-        </Typo>
-      </Flex>
+      <DocTitle
+        category="Components"
+        title="Button"
+        desc="사용자에게 행동을 요구하거나 유도할 때 사용하는 요소입니다."
+      />
       <ButtonPreview />
     </>
   );

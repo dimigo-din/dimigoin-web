@@ -1,5 +1,26 @@
 import { Flex, Link, Typo, VStack } from "factory94";
 
+function MenuItem({
+  category,
+  items = [],
+}: {
+  category: string;
+  items: Array<[string, string]>; // [name, path]
+}) {
+  return (
+    <Flex direction="column">
+      <Typo type="headline">{category}</Typo>
+      <Flex mt="200" pl="300" direction="column" gap="200">
+        {items.map(([name, path], i) => (
+          <Link key={i} to={path} type="body">
+            {name}
+          </Link>
+        ))}
+      </Flex>
+    </Flex>
+  );
+}
+
 export function Sidebar() {
   return (
     <VStack
@@ -15,37 +36,18 @@ export function Sidebar() {
       top="0"
       left="0"
       zIndex="20">
-      <Flex direction="column">
-        <Typo type="headline">Foundation</Typo>
-        <Flex mt="200" pl="300" direction="column" gap="200">
-          <Link to="/foundation/color" type="body">
-            Color
-          </Link>
-          <Link to="/foundation/typo" type="body">
-            Typography
-          </Link>
-          <Link to="/foundation/component" type="body">
-            Component
-          </Link>
-          <Link to="/foundation/icon" type="body">
-            Icon
-          </Link>
-          <Link to="/foundation/branding" type="body">
-            Branding
-          </Link>
-        </Flex>
-      </Flex>
-      <Flex direction="column">
-        <Typo type="headline">Components</Typo>
-        <Flex mt="200" pl="300" direction="column" gap="200">
-          <Link to="/components/button" type="body">
-            Button
-          </Link>
-          <Link to="/components/text-button" type="body">
-            TextButton
-          </Link>
-        </Flex>
-      </Flex>
+      <MenuItem
+        category="Foundation"
+        items={[
+          ["Color", "/foundation/color"],
+          ["Typography", "/foundation/typo"],
+          ["Component", "/foundation/component"],
+          ["Icon", "/foundation/icon"],
+          ["Branding", "/foundation/branding"],
+        ]}
+      />
+      <MenuItem category="Atom" items={[["Button", "/atom/button"]]} />
+      <MenuItem category="Inform" items={[["Toast", "/inform/toast"]]} />
     </VStack>
   );
 }
