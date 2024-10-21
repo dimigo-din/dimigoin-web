@@ -13,5 +13,5 @@ const Icon = React.memo(({ name = "Default", fill = "none", size = 24 }: IconPro
   return <IconBase fill={fill} size={size} />;
 });
 
-export { Icon };
+export { Icon, Icons };
 export type { IconName };

@@ -2,17 +2,15 @@ import { Box, Center, Typo, VStack, Wrap } from "factory94";
 
 function RadiusBox({
   radius,
-  ballSize,
 }: {
   radius: string;
-  ballSize: string;
 }) {
   return (
     <VStack>
       <Box w="96px" h="96px" bg="components.fill.standard.teritary" borderRadius={radius} position="relative">
         <Box
-          w={ballSize}
-          h={ballSize}
+          w={`calc(2 * var(--chakra-radii-${radius}))`}
+          h={`calc(2 * var(--chakra-radii-${radius}))`}
           borderRadius={radius}
           bg="solid.translucent.blue"
           position="absolute"
@@ -45,14 +43,14 @@ export function FoundationComponentRadius() {
       </VStack>
       <Center>
         <Wrap spacing="550">
-          <RadiusBox radius="100" ballSize="8px" />
-          <RadiusBox radius="200" ballSize="12px" />
-          <RadiusBox radius="300" ballSize="16px" />
-          <RadiusBox radius="400" ballSize="24px" />
-          <RadiusBox radius="500" ballSize="28px" />
-          <RadiusBox radius="600" ballSize="32px" />
-          <RadiusBox radius="700" ballSize="40px" />
-          <RadiusBox radius="800" ballSize="48px" />
+          <RadiusBox radius="100" />
+          <RadiusBox radius="200" />
+          <RadiusBox radius="300" />
+          <RadiusBox radius="400" />
+          <RadiusBox radius="500" />
+          <RadiusBox radius="600" />
+          <RadiusBox radius="700" />
+          <RadiusBox radius="800" />
         </Wrap>
       </Center>
     </VStack>

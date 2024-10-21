@@ -18,8 +18,8 @@ function SpacingBox({
   return (
     <VStack>
       <Flex w="120px" h="120px" bg={bgColor} borderRadius="8px" position="relative" gap={spacing}>
-        <Box w="full" h="full" bg="solid.white" />
-        <Box w="full" h="full" bg="solid.white" />
+        <Box w="full" h="full" bg="background.standard.primary" />
+        <Box w="full" h="full" bg="background.standard.primary" />
         <Center w="full" h="full" position="absolute" top="0" left="0" zIndex="5">
           <Box py="50" px="12px" bg={badgeColor} borderRadius="400">
             <Typo type="footnote" weight="weak" color="solid.white">
@@ -39,7 +39,7 @@ function SpacingBox({
         {isBenchmark && (
           <Center w="full" h="full" position="absolute" top="0" left="0" zIndex="5">
             <Box mt="auto" py="50" px="12px" bg="components.fill.inverted.secondary" borderRadius="400">
-              <Typo type="footnote" weight="strong" color="solid.white">
+              <Typo type="footnote" weight="strong" color="content.inverted.primary">
                 기준점
               </Typo>
             </Box>
