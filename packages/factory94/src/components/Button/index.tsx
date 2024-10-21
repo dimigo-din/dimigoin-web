@@ -26,7 +26,7 @@ const ButtonBGColor: Record<
 > = {
   grayscale: {
     primary: "components.fill.inverted.primary",
-    secondary: "components.transcluent.secondary",
+    secondary: "components.translucent.secondary",
   },
   accent: {
     primary: "core.brand.primary",
@@ -39,7 +39,7 @@ const ButtonBGColor: Record<
   },
   status: {
     primary: "core.status.negative",
-    secondary: "core.status.transcluent.negative",
+    secondary: "core.status.translucent.negative",
   },
 };
 
