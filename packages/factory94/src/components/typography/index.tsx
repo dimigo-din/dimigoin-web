@@ -1,8 +1,8 @@
-import { Text } from "@chakra-ui/react";
-
 import type { ThemeTypings } from "@chakra-ui/styled-system";
 
-const TypoProperty: {
+import { Text } from "@chakra-ui/react";
+
+export const TypoProperty: {
   [key: string]: {
     fontSize: ThemeTypings["fontSizes"];
     lineHeight: ThemeTypings["lineHeights"];
@@ -72,6 +72,6 @@ function Typography({
 
 const Typo = Typography;
 
-export default Typography;
+// export default Typography;
 
-export { Typography, Typo };
+export { Typography, Typo, Text };

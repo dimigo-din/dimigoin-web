@@ -6,15 +6,16 @@ export function Header() {
       px="550"
       w="full"
       h="72px"
-      bg="background.standard.primary"
+      bg="background.inverted.primary"
       justifyContent="space-between"
       alignItems="center">
       <Center gap="150">
-        <SymbolLogo type="mono" size="28" />
-        <Typo type="title" weight="strong">
+        <SymbolLogo type="mono" size="28" fill={["#F4F4F5", "#202128"]} />
+        <Typo type="title" weight="strong" color="content.inverted.primary">
           Factory 94
         </Typo>
       </Center>
+      {/* <Center></Center> */}
     </Flex>
   );
 }

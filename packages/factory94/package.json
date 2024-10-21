@@ -18,6 +18,9 @@
     "react": "catalog:",
     "react-dom": "catalog:"
   },
+  "peerDependencies": {
+    "react-router-dom": ">=6.27.0"
+  },
   "devDependencies": {
     "@chakra-ui/cli": "^2.5.5",
     "@types/react": "catalog:",

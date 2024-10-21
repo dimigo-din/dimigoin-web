@@ -1,3 +1,4 @@
+import { useColorModeValue } from "@chakra-ui/react";
 import ColorSymbol from "./ColorSymbol";
 import MonoSymbol from "./MonoSymbol";
 import OutlinedSymbol from "./OutlinedSymbol";
@@ -5,14 +6,17 @@ import OutlinedSymbol from "./OutlinedSymbol";
 type SymbolProps = {
   type: "color" | "mono" | "outlined";
   size: string | number;
+  fill?: [string, string];
 };
 
-export const SymbolLogo = (props: SymbolProps) => {
+export const SymbolLogo = ({ type, size, fill }: SymbolProps) => {
+  const fillColor = useColorModeValue(fill?.[0], fill?.[1]);
+
   return (
     <>
-      {props.type === "color" && <ColorSymbol size={props.size} />}
-      {props.type === "mono" && <MonoSymbol size={props.size} />}
-      {props.type === "outlined" && <OutlinedSymbol size={props.size} />}
+      {type === "color" && <ColorSymbol size={size} />}
+      {type === "mono" && <MonoSymbol size={size} fill={fillColor} />}
+      {type === "outlined" && <OutlinedSymbol size={size} />}
     </>
   );
 };

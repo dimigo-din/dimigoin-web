@@ -118,6 +118,9 @@ importers:
       react-dom:
         specifier: 'catalog:'
         version: 18.3.1(react@18.3.1)
+      react-router-dom:
+        specifier: '>=6.27.0'
+        version: 6.27.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     devDependencies:
       '@chakra-ui/cli':
         specifier: ^2.5.5
