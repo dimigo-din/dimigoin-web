@@ -12,7 +12,7 @@ export function HomePage() {
         <VStack w="full" h="full" alignItems="flex-start" bg="background.standard.primary" pl="240px">
           <Box w="full" h="full" position="relative">
             <VStack w="full" h="full" alignItems="flex-start" position="absolute">
-              <VStack w="full" h="full" alignItems="flex-start" tabIndex={-1}>
+              <VStack w="full" h="full" alignItems="flex-start">
                 <Flex w="full" h="full" overflow="scroll" direction="column">
                   <Box>
                     <Flex direction="column" p="600" minW="6xl" maxW="6xl" position="relative">

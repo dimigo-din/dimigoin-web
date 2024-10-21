@@ -59,11 +59,12 @@ function Typography({
   color = "content.standard.primary",
   children,
 }: TypographyProps) {
+  const typoWeight = type === "paragraphLarnge" || type === "paragraphSmall" ? "weak" : weight;
   return (
     <Text
       fontSize={TypoProperty[type].fontSize}
       lineHeight={TypoProperty[type].lineHeight}
-      fontWeight={weight}
+      fontWeight={typoWeight}
       color={color}>
       {children}
     </Text>
