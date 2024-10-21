@@ -1,4 +1,4 @@
-import { Box, Button, Flex, HStack, Icon, Typo, VStack, matcher } from "factory94";
+import { Button, Flex, HStack, Icon, Typo, VStack, matcher } from "factory94";
 
 function DefaultIcon({
   size,
@@ -73,22 +73,6 @@ function ButtonPreview() {
               </HStack>
             </HStack>
           ))}
-          {/* <HStack gap="inherit">
-            <Button size={s} theme="grayscale" style="secondary" />
-            <Button size={s} theme="grayscale" style="secondary" disabled />
-            <Button size={s} theme="grayscale" style="primary" />
-            <Button size={s} theme="grayscale" style="primary" disabled />
-            <Button size={s} theme="accent" style="secondary" />
-            <Button size={s} theme="accent" style="secondary" disabled />
-            <Button size={s} theme="accent" style="primary" />
-            <Button size={s} theme="accent" style="primary" disabled />
-          </HStack>
-          <HStack gap="inherit">
-            <Button size={s} theme="status" style="secondary" />
-            <Button size={s} theme="status" style="secondary" disabled />
-            <Button size={s} theme="status" style="primary" />
-            <Button size={s} theme="status" style="primary" disabled />
-          </HStack> */}
         </VStack>
       ))}
     </Flex>
@@ -97,25 +81,19 @@ function ButtonPreview() {
 
 export function ButtonPage() {
   return (
-    <VStack w="full" h="full" alignItems="flex-start" tabIndex={-1}>
-      <Flex w="full" h="full" overflow="scroll" direction="column">
-        <Box>
-          <Flex direction="column" p="600" minW="5xl" maxW="5xl" position="relative">
-            <Flex direction="column">
-              <Typo type="body" weight="strong">
-                Components
-              </Typo>
-              <Typo type="display" weight="strong">
-                Button
-              </Typo>
-              <Typo type="paragraphLarge" color="content.standard.secondary">
-                사용자에게 행동을 요구하거나 유도할 때 사용하는 요소입니다.
-              </Typo>
-            </Flex>
-            <ButtonPreview />
-          </Flex>
-        </Box>
+    <>
+      <Flex direction="column">
+        <Typo type="body" weight="strong">
+          Components
+        </Typo>
+        <Typo type="display" weight="strong">
+          Button
+        </Typo>
+        <Typo type="paragraphLarge" color="content.standard.secondary">
+          사용자에게 행동을 요구하거나 유도할 때 사용하는 요소입니다.
+        </Typo>
       </Flex>
-    </VStack>
+      <ButtonPreview />
+    </>
   );
 }

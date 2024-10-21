@@ -44,7 +44,7 @@ const colors = {
       default: "#FFFFFF",
       _dark: "#FFFFFF",
     },
-    trascluent: {
+    translucent: {
       red: {
         default: "rgba(255, 64, 53, 0.1)",
         _dark: "rgba(255, 64, 53, 0.2)",
@@ -135,7 +135,7 @@ const colors = {
         default: "rgba(32, 33, 40, 0.5)",
         _dark: "rgba(244, 244, 245, 0.5)",
       },
-      quarternary: {
+      quaternary: {
         default: "rgba(32, 33, 40, 0.3)",
         _dark: "rgba(244, 244, 245, 0.3)",
       },
@@ -153,7 +153,7 @@ const colors = {
         default: "rgba(244, 244, 245, 0.4)",
         _dark: "rgba(32, 33, 40, 0.4)",
       },
-      quarternary: {
+      quaternary: {
         default: "rgba(244, 244, 245, 0.2)",
         _dark: "rgba(32, 33, 40, 0.2)",
       },
@@ -208,15 +208,15 @@ const colors = {
         _dark: "rgba(244, 244, 245, 0.08)",
       },
       focused: {
-        default: "rgba(50, 204, 88, 0.12)",
-        _dark: "rgba(50, 204, 88, 0.12)",
+        default: "rgba(32, 33, 40, 0.12)",
+        _dark: "rgba(244, 244, 245, 0.12)",
       },
       pressed: {
         default: "rgba(32, 33, 40, 0.16)",
         _dark: "rgba(244, 244, 245, 0.16)",
       },
     },
-    transcluent: {
+    translucent: {
       primary: {
         default: "rgba(73, 79, 122, 0.16)",
         _dark: "rgba(121, 123, 138, 0.24)",
@@ -267,7 +267,7 @@ const colors = {
         default: "#FF4035",
         _dark: "#FF4035",
       },
-      transcluent: {
+      translucent: {
         positive: {
           // same with trascluent green
           default: "rgba(50, 204, 88, 0.1)",
@@ -286,7 +286,7 @@ const colors = {
       },
     },
   },
-  calender: {
+  calendar: {
     exam: {
       default: "#5B59DE",
       _dark: "#5B59DE",
