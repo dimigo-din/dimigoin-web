@@ -1,11 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
 
-import { ButtonPage } from "./pages/components/button";
-import { BrandingPage } from "./pages/foundation/branding";
-import { ColorPage } from "./pages/foundation/color";
-import { ComponentPage } from "./pages/foundation/component";
-import { IconPage } from "./pages/foundation/icon";
-import { TypoPage } from "./pages/foundation/typography";
+import { FoundationButtonPage } from "./pages/components/button";
+import { FoundationBrandingPage } from "./pages/foundation/branding";
+import { FoundationColorPage } from "./pages/foundation/color";
+import { FoundationComponentPage } from "./pages/foundation/component";
+import { FoundationIconPage } from "./pages/foundation/icon";
+import { FoundationTypoPage } from "./pages/foundation/typography";
 import { HomePage } from "./pages/home";
 
 export const router = createBrowserRouter([
@@ -18,23 +18,23 @@ export const router = createBrowserRouter([
         children: [
           {
             path: "color",
-            element: <ColorPage />,
+            element: <FoundationColorPage />,
           },
           {
             path: "typo",
-            element: <TypoPage />,
+            element: <FoundationTypoPage />,
           },
           {
             path: "component",
-            element: <ComponentPage />,
+            element: <FoundationComponentPage />,
           },
           {
             path: "icon",
-            element: <IconPage />,
+            element: <FoundationIconPage />,
           },
           {
             path: "branding",
-            element: <BrandingPage />,
+            element: <FoundationBrandingPage />,
           },
         ],
       },
@@ -43,7 +43,7 @@ export const router = createBrowserRouter([
         children: [
           {
             path: "button",
-            element: <ButtonPage />,
+            element: <FoundationButtonPage />,
           },
         ],
       },

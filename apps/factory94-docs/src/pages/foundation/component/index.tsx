@@ -1,6 +1,9 @@
-import { Flex, Typo } from "factory94";
+import { Box, Center, Flex, Typo, VStack, Wrap } from "factory94";
+import { FoundationComponentRadius } from "./Radius";
+import { FoundationComponentSpacing } from "./Spacing";
+import { FoundationComponentTip } from "./Tip";
 
-export function ComponentPage() {
+export function FoundationComponentPage() {
   return (
     <>
       <Flex direction="column">
@@ -17,7 +20,9 @@ export function ComponentPage() {
         </Typo>
       </Flex>
       <Flex mt="900" direction="column" gap="1000">
-        {}
+        <FoundationComponentRadius />
+        <FoundationComponentSpacing />
+        <FoundationComponentTip />
       </Flex>
     </>
   );

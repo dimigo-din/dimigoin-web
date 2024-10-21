@@ -1,6 +1,6 @@
 import { Flex, Typo } from "factory94";
 
-export function BrandingPage() {
+export function FoundationBrandingPage() {
   return (
     <>
       <Flex direction="column">

@@ -42,7 +42,7 @@ function TextGrid({
   );
 }
 
-export function TypoPage() {
+export function FoundationTypoPage() {
   return (
     <>
       <Flex direction="column">

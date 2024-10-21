@@ -1,6 +1,6 @@
 import { Flex, Typo } from "factory94";
 
-export function IconPage() {
+export function FoundationIconPage() {
   return (
     <>
       <Flex direction="column">

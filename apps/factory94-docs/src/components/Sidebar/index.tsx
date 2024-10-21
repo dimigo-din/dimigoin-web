@@ -14,7 +14,7 @@ export function Sidebar() {
       position="absolute"
       top="0"
       left="0"
-      zIndex="4">
+      zIndex="20">
       <Flex direction="column">
         <Typo type="headline">Foundation</Typo>
         <Flex mt="200" pl="300" direction="column" gap="200">

@@ -79,7 +79,7 @@ function ButtonPreview() {
   );
 }
 
-export function ButtonPage() {
+export function FoundationButtonPage() {
   return (
     <>
       <Flex direction="column">

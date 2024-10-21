@@ -143,7 +143,7 @@ function SectionTitle({
   );
 }
 
-export function ColorPage() {
+export function FoundationColorPage() {
   return (
     <>
       <Flex direction="column">
