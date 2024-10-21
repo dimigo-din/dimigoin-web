@@ -24,8 +24,14 @@ export function Sidebar() {
           <Link to="/foundation/typo" type="body">
             Typography
           </Link>
+          <Link to="/foundation/component" type="body">
+            Component
+          </Link>
           <Link to="/foundation/icon" type="body">
             Icon
+          </Link>
+          <Link to="/foundation/branding" type="body">
+            Branding
           </Link>
         </Flex>
       </Flex>

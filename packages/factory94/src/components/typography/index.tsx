@@ -50,6 +50,7 @@ export type TypographyProps = {
   type?: keyof typeof TypoProperty;
   weight?: ThemeTypings["fontWeights"];
   color?: ThemeTypings["colors"];
+  wordBreak?: "normal" | "break-all" | "keep-all" | "break-word";
   children: React.ReactNode;
 };
 
@@ -57,6 +58,7 @@ function Typography({
   type = "body",
   weight = "regular",
   color = "content.standard.primary",
+  wordBreak = "keep-all",
   children,
 }: TypographyProps) {
   const typoWeight = type === "paragraphLarnge" || type === "paragraphSmall" ? "weak" : weight;
@@ -65,6 +67,7 @@ function Typography({
       fontSize={TypoProperty[type].fontSize}
       lineHeight={TypoProperty[type].lineHeight}
       fontWeight={typoWeight}
+      wordBreak={wordBreak}
       color={color}>
       {children}
     </Text>

@@ -159,7 +159,7 @@ export function ColorPage() {
           효율적인 컬러 사용을 위해 Scoping이 적용되어 있습니다.
         </Typo>
       </Flex>
-      <Flex mt="700" direction="column" gap="1000">
+      <Flex mt="900" direction="column" gap="1000">
         <VStack alignItems="flex-start" gap="850">
           <SectionTitle title="Solid" desc="단색 계열, 시스템 기본 컬러" />
           <Wrap spacing="550">
