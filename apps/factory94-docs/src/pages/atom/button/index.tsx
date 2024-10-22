@@ -1,5 +1,5 @@
 import { DocTitle } from "@/components/DocTitle";
-import { customStrokeBG } from "@/lib/customStrokeBG";
+import { StrokeFlex } from "@/components/StrokeFlex";
 import { Button, Flex, HStack, Icon, VStack, matcher } from "factory94";
 
 function DefaultIcon({
@@ -37,18 +37,7 @@ function ButtonPreview() {
   const style = ["secondary", "primary"] as const;
 
   return (
-    <Flex
-      my="900"
-      direction="column"
-      alignItems="flex-start"
-      p="500"
-      background={customStrokeBG({
-        strokeColor: "rgba(121, 123, 138, 0.32)",
-        strokeDashArray: [10, 5],
-        strokeOffset: 2,
-        borderRadius: "8px",
-      })}
-      gap="550">
+    <StrokeFlex p="500" gap="550">
       {size.map((s, i) => (
         <VStack alignItems="flex-start" gap="inherit" key={i}>
           {theme.map((t, j) => (
@@ -82,7 +71,7 @@ function ButtonPreview() {
           ))}
         </VStack>
       ))}
-    </Flex>
+    </StrokeFlex>
   );
 }
 
@@ -94,7 +83,9 @@ export function AtomButtonPage() {
         title="Button"
         desc="사용자에게 행동을 요구하거나 유도할 때 사용하는 요소입니다."
       />
-      <ButtonPreview />
+      <Flex pt="900" gap="1000">
+        <ButtonPreview />
+      </Flex>
     </>
   );
 }

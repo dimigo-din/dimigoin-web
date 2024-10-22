@@ -46,7 +46,13 @@ export function Sidebar() {
           ["Branding", "/foundation/branding"],
         ]}
       />
-      <MenuItem category="Atom" items={[["Button", "/atom/button"]]} />
+      <MenuItem
+        category="Atom"
+        items={[
+          ["Divider", "/atom/divider"],
+          ["Button", "/atom/button"],
+        ]}
+      />
       <MenuItem category="Inform" items={[["Toast", "/inform/toast"]]} />
     </VStack>
   );

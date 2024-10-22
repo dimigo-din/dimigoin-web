@@ -16,10 +16,10 @@
   "devDependencies": {
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
-    "@vitejs/plugin-react-swc": "^3.5.0",
-    "globals": "^15.9.0",
-    "typescript": "^5.5.3",
-    "vite": "^5.4.8",
+    "@vitejs/plugin-react-swc": "^3.7.1",
+    "globals": "^15.11.0",
+    "typescript": "catalog:",
+    "vite": "^5.4.9",
     "vite-tsconfig-paths": "^5.0.1"
   }
 }

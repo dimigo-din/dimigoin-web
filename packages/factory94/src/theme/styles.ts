@@ -1,7 +1,7 @@
 import type { Styles } from "@chakra-ui/theme-tools";
 
 export const styles: Styles = {
-  global: {
+  global: () => ({
     "*": {
       margin: 0,
       padding: 0,
@@ -13,5 +13,8 @@ export const styles: Styles = {
       width: "100%",
       height: "100%",
     },
-  },
+    body: {
+      bg: "",
+    },
+  }),
 };
